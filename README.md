@@ -1,46 +1,45 @@
-# 📊 Projet de pilotage commercial & Data Quality — Power BI
+# 📊 Projet de pilotage commercial & Data Quality - Power BI
 
-Projet de Business Intelligence réalisé avec **Power BI, PostgreSQL, Power Query (M), DAX et SQL** afin de construire un outil de pilotage de la performance commerciale et de contrôle de la qualité des données.
+Projet BI réalisé avec **Power BI, PostgreSQL, Power Query (M), DAX et SQL** pour construire un reporting de pilotage commercial, suivre les objectifs et intégrer des contrôles de qualité des données.
 
-L’objectif est de transformer plusieurs sources commerciales en un modèle analytique structuré permettant de suivre le chiffre d’affaires, la marge, les objectifs commerciaux et les performances par région, catégorie, client et commercial.
+Le projet couvre toute la chaîne, depuis les fichiers sources jusqu'au dashboard : chargement dans PostgreSQL, préparation dans Power Query, modélisation, mesures DAX, visualisation, Data Quality, RLS et analyse des performances.
 
 ---
 
 ## 🎯 Objectifs du projet
 
-Le projet répond à plusieurs besoins métier :
-
 - suivre le **CA net**, la marge et le taux de marge ;
-- comparer les performances aux **objectifs commerciaux** ;
-- analyser les résultats par **commercial, région, catégorie et client** ;
-- suivre l’évolution du CA dans le temps ;
-- accéder au détail d’un commercial via un **drill-through** ;
-- détecter les anomalies de référentiel et mesurer la **conformité des données** ;
-- proposer une expérience interactive avec filtres, paramètres de champs et tooltips ;
-- contrôler les performances des visuels et des requêtes DAX ;
-- appliquer un **Row-Level Security (RLS) dynamique** pour simuler des droits d’accès différents.
+- comparer les résultats aux **objectifs commerciaux** ;
+- analyser les performances par **commercial, région, catégorie et client** ;
+- suivre l'évolution mensuelle du CA et la comparaison avec N-1 ;
+- accéder au détail d'un commercial avec un **drill-through** ;
+- détecter les clients, produits et commerciaux inconnus ;
+- mesurer le **taux de conformité des données** ;
+- proposer des interactions avec slicers, field parameter et tooltip ;
+- appliquer un **Row-Level Security (RLS) dynamique** ;
+- contrôler les temps d'exécution avec le **Performance Analyzer**.
 
 ---
 
-## 🎬 Démonstration interactive
+## 🎬 Démonstrations
 
 ### Dashboard Power BI
 
 ![Démo du projet Power BI](gif/Demo_Projet_Pilotage_Commercial_Data_Quality.gif)
 
-La démonstration montre notamment :
+Le GIF montre notamment :
 
-- les filtres interactifs ;
-- le changement dynamique de KPI ;
-- les mises à jour des graphiques ;
+- l'utilisation des slicers ;
+- le changement dynamique du KPI affiché ;
+- la mise à jour des graphiques selon le contexte de filtre ;
 - le tooltip commercial ;
-- le drill-through vers la page de détail.
+- le drill-through vers le détail d'un commercial.
 
 ### Row-Level Security (RLS)
 
 ![Démo RLS](gif/Demo_RLS.gif)
 
-Cette démonstration illustre le comportement du rapport selon l’utilisateur simulé dans Power BI Desktop.
+Cette démonstration montre le comportement du rapport avec différents utilisateurs simulés dans Power BI Desktop via **View as / Afficher comme**.
 
 ---
 
@@ -50,9 +49,9 @@ Cette démonstration illustre le comportement du rapport selon l’utilisateur s
 
 ![Vue Direction](screenshot/01_vue_direction.jpg)
 
-Vue synthétique destinée au pilotage global de l’activité.
+Vue synthétique pour suivre l'activité commerciale.
 
-Principaux indicateurs :
+### KPI
 
 - CA Net ;
 - Marge ;
@@ -61,15 +60,15 @@ Principaux indicateurs :
 - Évolution du CA Net vs N-1 ;
 - Écart CA Net vs objectif.
 
-Analyses disponibles :
+### Analyses
 
 - performance par région ;
 - performance par catégorie ;
 - Top 10 clients ;
 - évolution mensuelle ;
-- sélection dynamique du KPI affiché.
+- sélection dynamique de l'indicateur affiché.
 
-Le paramètre de champ permet de choisir entre :
+Le **field parameter** permet de basculer entre :
 
 `CA Net` • `Marge` • `Nb Commandes` • `Panier Moyen`
 
@@ -79,38 +78,40 @@ Le paramètre de champ permet de choisir entre :
 
 ![Performance commerciale](screenshot/02_vue_performance_commerciale.jpg)
 
-Cette page permet de comparer la performance des commerciaux à leurs objectifs.
+Cette page compare les résultats des commerciaux à leurs objectifs.
 
 Indicateurs suivis :
 
 - CA Net ;
 - Objectif CA ;
-- Taux d’atteinte ;
+- Taux d'atteinte ;
 - Écart vs objectif ;
 - Panier moyen ;
 - Taux de marge ;
 - Nombre de commandes.
 
+La vue permet également de comparer les commerciaux dans un tableau détaillé et d'accéder à leur page individuelle par drill-through.
+
 ---
 
-## 3. Détail commercial — Drill-through
+## 3. Détail commercial - Drill-through
 
 ![Détail commercial](screenshot/03_vue_detail_commercial_drill_through.jpg)
 
-Une page de **drill-through** permet d’accéder au détail d’un commercial sélectionné depuis la page Performance commerciale.
+Cette page reçoit le contexte du commercial sélectionné depuis la page Performance commerciale.
 
 Elle présente notamment :
 
 - CA réalisé ;
 - objectif ;
-- écart à l’objectif ;
-- taux d’atteinte ;
+- écart à l'objectif ;
+- taux d'atteinte ;
 - marge ;
 - panier moyen ;
 - évolution mensuelle ;
-- analyse par client.
+- analyse du CA par client.
 
-Cette page est masquée de la navigation principale et accessible depuis le contexte d’un commercial.
+La page est masquée dans la navigation principale du rapport et utilisée comme page de drill-through.
 
 ---
 
@@ -118,47 +119,48 @@ Cette page est masquée de la navigation principale et accessible depuis le cont
 
 ![Qualité et conformité](screenshot/04_vue_qualite_conformite.jpg)
 
-Le projet intègre des contrôles dédiés à la qualité des données.
+Cette page centralise les contrôles de Data Quality du projet.
 
 Contrôles réalisés :
 
 - clients inconnus ;
 - produits inconnus ;
 - commerciaux inconnus ;
-- transactions présentant une anomalie ;
+- transactions présentant au moins une anomalie ;
 - taux global de conformité.
 
-Des requêtes de détail permettent d’identifier les enregistrements concernés.
+Des tables de détail permettent d'identifier les transactions et références concernées.
 
 ---
 
-## 5. Tooltip commercial personnalisé
+## 5. Tooltip commercial
 
 ![Tooltip commercial](screenshot/05_commericla_tooltip.jpg)
 
-Un tooltip personnalisé affiche des informations complémentaires lors du survol d’un commercial, notamment :
+Un tooltip dédié complète les graphiques de performance commerciale avec :
 
 - CA Net ;
 - objectif ;
 - écart vs objectif ;
-- taux d’atteinte ;
+- taux d'atteinte ;
 - nombre de commandes.
 
 ---
 
-# 🗄️ Architecture des données
+# 🗄️ Sources et PostgreSQL
 
-Les fichiers sources sont disponibles dans les dossiers `excel/` et `csv/`.
+Les sources initiales sont fournies dans les dossiers `excel/` et `csv/`.
 
-Les données ont ensuite été intégrées dans une base **PostgreSQL** locale, dans la base :
+Elles sont chargées dans une base PostgreSQL locale :
 
-`powerbi_commercial`
-
-avec un schéma `raw`.
+```text
+Base : powerbi_commercial
+Schéma : raw
+```
 
 ![PostgreSQL](screenshot/07_postgres.jpg)
 
-Tables principales :
+Tables du schéma `raw` :
 
 ```text
 raw.clients
@@ -168,34 +170,28 @@ raw.produits
 raw.ventes_brutes
 ```
 
-Architecture générale :
+Chaîne d'alimentation :
 
 ```text
-Fichiers Excel / CSV
-        │
-        ▼
-PostgreSQL
-powerbi_commercial
-        │
-        └── schema raw
-            ├── clients
-            ├── commerciaux
-            ├── objectifs
-            ├── produits
-            └── ventes_brutes
-        │
-        ▼
+Excel / CSV
+    |
+    v
+PostgreSQL - schéma raw
+    |
+    v
 Power Query / M
-        │
-        ▼
-Modèle en étoile Power BI
-        │
-        ▼
-Mesures DAX
-        │
-        ▼
+    |
+    v
+Modèle Power BI
+    |
+    v
+DAX
+    |
+    v
 Dashboard + Data Quality + RLS
 ```
+
+La couche `raw` conserve les données sources avant les transformations réalisées dans Power Query.
 
 ---
 
@@ -205,20 +201,20 @@ Dashboard + Data Quality + RLS
 
 Power Query est utilisé pour préparer les données avant leur chargement dans le modèle.
 
-Exemples de traitements :
+Principaux traitements :
 
 - connexion à PostgreSQL ;
 - nettoyage des espaces ;
-- normalisation des valeurs texte ;
+- standardisation des champs texte ;
 - conversion des dates ;
-- conversion des champs numériques ;
+- conversion des valeurs numériques ;
 - normalisation des remises ;
 - traitement des valeurs nulles ;
-- création de contrôles ;
-- suppression des doublons ;
-- préparation des dimensions et tables de faits.
+- création de contrôles de qualité ;
+- suppression des doublons sur les transactions ;
+- préparation des dimensions et des tables de faits.
 
-Exemple de connexion PostgreSQL en langage M :
+Exemple de connexion PostgreSQL en M :
 
 ```powerquery
 Source =
@@ -228,7 +224,7 @@ Source =
     )
 ```
 
-Navigation vers la table de ventes brutes :
+Navigation vers la table des ventes :
 
 ```powerquery
 Source{[Schema="raw", Item="ventes_brutes"]}[Data]
@@ -240,7 +236,9 @@ Source{[Schema="raw", Item="ventes_brutes"]}[Data]
 
 ![Modèle Power BI](screenshot/08_modele_powerbi.jpg)
 
-Le modèle est organisé selon une logique de **schéma en étoile**.
+Le cœur du modèle suit une logique de **schéma en étoile**, complétée par plusieurs tables techniques déconnectées utilisées pour les contrôles, les interactions et la sécurité.
+
+## Modèle analytique principal
 
 ### Dimensions
 
@@ -254,15 +252,42 @@ Le modèle est organisé selon une logique de **schéma en étoile**.
 - `FactVentes`
 - `FactObjectifs`
 
-Les dimensions filtrent les tables de faits via des relations `1 → *`.
+Relations principales :
 
-`DimDate` est générée directement dans Power Query.
+```text
+DimClients       1 -> * FactVentes
+DimProduit       1 -> * FactVentes
+DimCommerciaux   1 -> * FactVentes
+DimDate          1 -> * FactVentes
+
+DimCommerciaux   1 -> * FactObjectifs
+DimDate          1 -> * FactObjectifs
+```
+
+`DimDate` est générée dans Power Query.
+
+## Tables techniques et de contrôle
+
+Les tables placées à gauche du modèle ne sont pas oubliées : elles répondent à des usages spécifiques et ne font pas partie du cœur du schéma en étoile.
+
+- `SecurityUsers` : table de mapping utilisée par le RLS dynamique avec l'email, le profil et le `Commercial_ID` ;
+- `Paramètre` : table générée par le field parameter pour choisir dynamiquement le KPI affiché ;
+- `Mesures` : table dédiée au rangement des mesures DAX ;
+- `CTRL_Clients_Inconnus` : contrôle des références clients absentes de `DimClients` ;
+- `CTRL_Produits_Inconnus` : contrôle des références produits absentes de `DimProduit` ;
+- `CTRL_Commerciaux_Inconnus` : contrôle des références commerciales absentes de `DimCommerciaux` ;
+- `CTRL_Anomalies_Detail` : consolidation des anomalies au niveau transaction ;
+- `Types Anomalies` : liste utilisée pour organiser et filtrer les types d'anomalies.
+
+Des requêtes de détail complémentaires permettent également d'afficher les lignes à l'origine des anomalies dans la page Data Quality.
+
+Cette séparation garde le modèle métier lisible tout en isolant les tables utilisées pour la sécurité, les paramètres et les contrôles de qualité.
 
 ---
 
 # 🧮 DAX
 
-Les indicateurs du dashboard sont calculés avec des mesures DAX.
+Les indicateurs du dashboard sont construits avec des mesures DAX.
 
 Exemples :
 
@@ -274,30 +299,31 @@ Exemples :
 - nombre de commandes ;
 - objectif CA ;
 - écart vs objectif ;
-- taux d’atteinte ;
+- taux d'atteinte ;
 - évolution du CA vs N-1.
 
-DAX est également utilisé pour :
+DAX est aussi utilisé pour :
 
 - les titres dynamiques ;
 - les couleurs conditionnelles ;
 - les contextes de filtres ;
-- les KPI Data Quality ;
-- la logique de RLS dynamique.
+- les indicateurs de Data Quality ;
+- le RLS dynamique avec `USERPRINCIPALNAME()`.
 
 ---
 
 # 🔐 Row-Level Security (RLS)
 
-Le rapport intègre un **RLS dynamique** afin de simuler plusieurs niveaux d’accès.
+Le rapport intègre un **RLS dynamique** basé sur une table de sécurité dédiée.
 
-Principe de démonstration :
+Principe de la démonstration :
 
-- un commercial voit uniquement les données associées à son identifiant ;
-- un manager peut disposer d’une vue étendue selon la règle de sécurité définie ;
-- l’utilisateur est simulé dans Power BI Desktop via **Afficher comme / View as**.
+- un commercial ne voit que les données associées à son `Commercial_ID` ;
+- un manager voit l'ensemble des données ;
+- l'utilisateur est simulé dans Power BI Desktop avec **View as / Afficher comme** ;
+- `USERPRINCIPALNAME()` permet de récupérer l'identifiant de l'utilisateur dans la règle RLS.
 
-La démonstration est disponible ici :
+La table `SecurityUsers` reste déconnectée du modèle métier et sert de table de mapping pour déterminer le profil et le `Commercial_ID` correspondant.
 
 ![Démo RLS](gif/Demo_RLS.gif)
 
@@ -305,35 +331,43 @@ La démonstration est disponible ici :
 
 # ⚙️ Fonctionnalités Power BI utilisées
 
-- modèle en étoile ;
+- modèle principal en étoile ;
 - PostgreSQL comme source de données ;
 - Power Query / langage M ;
 - mesures DAX ;
-- paramètres de champs ;
+- field parameter ;
 - titres dynamiques ;
-- filtres et slicers ;
+- slicers ;
 - tooltip personnalisé ;
 - drill-through ;
 - mise en forme conditionnelle ;
-- contrôles de qualité des données ;
-- Row-Level Security dynamique ;
-- analyse des performances des visuels.
+- contrôles de Data Quality ;
+- RLS dynamique ;
+- Performance Analyzer.
 
 ---
 
-# 🚀 Analyse des performances
+# 🚀 Performance Analyzer
 
-![Analyseur de performances](screenshot/06_analyseur_performance.jpg)
+![Performance Analyzer](screenshot/06_analyseur_performance.jpg)
 
-Le **Performance Analyzer** de Power BI a été utilisé pour observer le temps d’exécution des visuels.
+Le **Performance Analyzer** a été utilisé pour mesurer le temps d'exécution des principaux visuels.
 
-L’analyse permet notamment de distinguer :
+Sur les tests réalisés, les requêtes **DAX sont très rapides**, généralement autour de **100 à 200 ms**. Elles ne constituent donc pas le principal point de ralentissement observé.
 
-- le temps d’exécution DAX ;
-- le temps d’affichage du visuel ;
-- les autres traitements internes Power BI.
+La plus grande partie du temps total apparaît dans les catégories **Visual display** et surtout **Other**. `Other` regroupe plusieurs opérations internes de Power BI qui ne correspondent pas directement à l'exécution DAX : attente entre visuels, ordonnancement des requêtes, traitements internes et disponibilité des ressources.
 
-Cette étape permet d’identifier les axes d’optimisation avant publication.
+Dans ce projet exécuté localement, la durée élevée de `Other` semble donc davantage liée au rendu du rapport et aux **ressources disponibles sur le PC** qu'à la complexité des mesures DAX elles-mêmes. Cette interprétation reste dépendante de l'environnement d'exécution.
+
+Exemples observés lors des tests :
+
+```text
+DAX Query        : environ 100 à 200 ms
+Visual display   : plusieurs centaines de ms
+Other            : part majoritaire du temps total sur plusieurs visuels
+```
+
+Le contrôle avec Performance Analyzer permet ainsi de vérifier que les mesures DAX restent rapides et d'orienter l'optimisation vers le rendu, le nombre de visuels et l'environnement d'exécution plutôt que vers une réécriture inutile des mesures.
 
 ---
 
@@ -345,7 +379,7 @@ Cette étape permet d’identifier les axes d’optimisation avant publication.
 | Base de données | PostgreSQL |
 | Administration BDD | pgAdmin |
 | Transformation | Power Query / M |
-| Analyse | DAX |
+| Mesures et logique analytique | DAX |
 | Requêtes | SQL |
 | Sources initiales | Excel / CSV |
 | Versioning / Portfolio | Git / GitHub |
@@ -356,28 +390,28 @@ Cette étape permet d’identifier les axes d’optimisation avant publication.
 
 ```text
 Power_BI/
-│
+|
 ├── README.md
 ├── Projet_Pilotage_Commercial_Data_Quality.pbix
-│
+|
 ├── csv/
-│   ├── 01_Clients.csv
-│   ├── 02_Produits.csv
-│   ├── 03_Commerciaux.csv
-│   ├── 04_Ventes_Brutes.csv
-│   └── 05_Objectifs_Commerciaux.csv
-│
+|   ├── 01_Clients.csv
+|   ├── 02_Produits.csv
+|   ├── 03_Commerciaux.csv
+|   ├── 04_Ventes_Brutes.csv
+|   └── 05_Objectifs_Commerciaux.csv
+|
 ├── excel/
-│   ├── 01_Clients.xlsx
-│   ├── 02_Produits.xlsx
-│   ├── 03_Commerciaux.xlsx
-│   ├── 04_Ventes_Brutes.xlsx
-│   └── 05_Objectifs_Commerciaux.xlsx
-│
+|   ├── 01_Clients.xlsx
+|   ├── 02_Produits.xlsx
+|   ├── 03_Commerciaux.xlsx
+|   ├── 04_Ventes_Brutes.xlsx
+|   └── 05_Objectifs_Commerciaux.xlsx
+|
 ├── gif/
-│   ├── Demo_Projet_Pilotage_Commercial_Data_Quality.gif
-│   └── Demo_RLS.gif
-│
+|   ├── Demo_Projet_Pilotage_Commercial_Data_Quality.gif
+|   └── Demo_RLS.gif
+|
 └── screenshot/
     ├── 01_vue_direction.jpg
     ├── 02_vue_performance_commerciale.jpg
@@ -396,22 +430,30 @@ Power_BI/
 
 ```text
 Sources Excel / CSV
-      ↓
+      |
+      v
 PostgreSQL / schéma raw
-      ↓
+      |
+      v
 Nettoyage et transformations Power Query
-      ↓
+      |
+      v
 Dimensions + tables de faits
-      ↓
-Modèle en étoile
-      ↓
+      |
+      v
+Modèle principal en étoile
+      |
+      v
 Mesures DAX
-      ↓
+      |
+      v
 Data Quality + RLS
-      ↓
+      |
+      v
 Reporting Power BI
-      ↓
-Analyse des performances
+      |
+      v
+Performance Analyzer
 ```
 
 ---
@@ -421,31 +463,34 @@ Analyse des performances
 ### Data ingestion
 - intégration de plusieurs sources ;
 - chargement dans PostgreSQL ;
-- manipulation SQL.
+- requêtes SQL.
 
 ### Data preparation
 - nettoyage ;
 - standardisation ;
 - typage ;
 - gestion des valeurs nulles ;
-- traitement des anomalies ;
+- normalisation des remises ;
+- suppression des doublons ;
 - contrôles de qualité.
 
 ### Data modeling
 - dimensions ;
 - tables de faits ;
-- relations ;
-- schéma en étoile.
+- relations `1 -> *` ;
+- schéma en étoile ;
+- tables techniques déconnectées.
 
 ### Analytics
 - KPI ;
 - comparaison réalisé / objectif ;
 - analyse temporelle ;
-- segmentation commerciale.
+- segmentation commerciale ;
+- analyse N vs N-1.
 
 ### Data visualization
 - dashboard interactif ;
-- paramètres de champs ;
+- field parameter ;
 - slicers ;
 - drill-through ;
 - tooltip personnalisé ;
@@ -453,20 +498,21 @@ Analyse des performances
 
 ### Security & performance
 - RLS dynamique ;
-- simulation d’utilisateurs ;
+- `USERPRINCIPALNAME()` ;
+- simulation d'utilisateurs ;
 - Performance Analyzer ;
-- analyse des temps DAX et de rendu.
+- analyse des temps DAX et du rendu.
 
 ---
 
 # 🔜 Évolutions possibles
 
-- publication et exploitation complète dans Power BI Service ;
-- actualisation planifiée ;
-- configuration d’une gateway pour une base PostgreSQL locale ;
+- actualisation planifiée dans Power BI Service ;
+- configuration d'une gateway pour la base PostgreSQL locale ;
 - ajout de vues SQL dédiées au reporting ;
-- montée en volume des données ;
-- automatisation du pipeline d’alimentation.
+- tests sur des volumes de données plus importants ;
+- automatisation du pipeline d'alimentation ;
+- déploiement et gestion des accès dans un workspace Power BI.
 
 ---
 
