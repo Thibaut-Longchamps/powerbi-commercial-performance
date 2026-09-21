@@ -4,6 +4,13 @@ Projet BI réalisé avec **Power BI, PostgreSQL, Power Query (M), DAX et SQL** p
 
 Le projet couvre toute la chaîne, depuis les fichiers sources jusqu'au dashboard : chargement dans PostgreSQL, préparation dans Power Query, modélisation, mesures DAX, visualisation, Data Quality, RLS et analyse des performances.
 
+## 🔒 Données utilisées
+
+Les données utilisées dans ce projet sont **entièrement synthétiques et fictives**.
+
+Elles ont été créées uniquement à des fins de démonstration, d’apprentissage et de portfolio. Les clients, commerciaux, transactions, objectifs, régions et adresses utilisées pour les tests de RLS ne correspondent à aucune donnée réelle.
+
+Aucune donnée personnelle, commerciale ou confidentielle réelle n’est utilisée dans ce dépôt.
 ---
 
 ## 🎯 Objectifs du projet
