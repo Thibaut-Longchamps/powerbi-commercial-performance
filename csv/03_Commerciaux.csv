@@ -1,0 +1,11 @@
+﻿Commercial_ID;Nom_Commercial;Region;Manager;Date_Entree;Statut
+COM01;Sophie Martin;Île-de-France;Claire Dubois;2023-01-04;Actif
+COM02;Thomas Bernard;Île-de-France;Claire Dubois;2022-12-15;Actif
+COM03;Nadia Petit;Nord;Marc Leclerc;2022-12-25;Actif
+COM04;Julien Robert;Nord;Marc Leclerc;2022-06-11;Actif
+COM05;Laura Richard;Est;Claire Dubois;2024-02-23;Actif
+COM06;Mehdi Durand;Est;Claire Dubois;2023-05-09;Actif
+COM07;Camille Leroy;Ouest;Marc Leclerc;2024-10-16;Actif
+COM08;Hugo Moreau;Ouest;Marc Leclerc;2022-10-21;Actif
+COM09;Sarah Simon;Sud;Claire Dubois;2023-04-21;Actif
+COM10;Alexandre Laurent;Sud;Claire Dubois;2024-08-02;Actif

@@ -1,0 +1,41 @@
+﻿Produit_ID;Libelle_Produit;Categorie;Sous_Categorie;Prix_Catalogue;Cout_Unitaire;Statut
+P001;PC portable Standard;Informatique;PC portable;418.42;304.48;Actif
+P002;PC portable Pro;Informatique;PC portable;775.76;426.87;Actif
+P003;Écran Standard;Informatique;Écran;592.84;333.45;Actif
+P004;Écran Pro;Informatique;Écran;673.81;447.85;Actif
+P005;Station d'accueil Standard;Informatique;Station d'accueil;386.01;236.02;Actif
+P006;Station d'accueil Pro;Informatique;Station d'accueil;505.17;380.19;Actif
+P007;Tablette Standard;Informatique;Tablette;374.55;260.28;Actif
+P008;Tablette Pro;Informatique;Tablette;717.73;446.05;Inactif
+P009;Mini PC Standard;Informatique;Mini PC;565.63;340.33;Actif
+P010;Mini PC Pro;Informatique;Mini PC;417.18;320.32;Actif
+P011;Clavier Standard;Accessoires;Clavier;41.03;31.37;Actif
+P012;Clavier Pro;Accessoires;Clavier;67.08;43.3;Actif
+P013;Souris Standard;Accessoires;Souris;56.06;36.72;Actif
+P014;Souris Pro;Accessoires;Souris;42.76;29.41;Actif
+P015;Casque Standard;Accessoires;Casque;40.2;22.76;Actif
+P016;Casque Pro;Accessoires;Casque;74.12;46.56;Actif
+P017;Webcam Standard;Accessoires;Webcam;46.37;25.53;Actif
+P018;Webcam Pro;Accessoires;Webcam;73.32;50.11;Actif
+P019;Chargeur Standard;Accessoires;Chargeur;74.63;48.71;Actif
+P020;Chargeur Pro;Accessoires;Chargeur;49.46;35.88;Actif
+P021;Chaise Standard;Mobilier;Chaise;311.31;233.49;Actif
+P022;Chaise Pro;Mobilier;Chaise;180.13;114.94;Actif
+P023;Bureau Standard;Mobilier;Bureau;212.64;132.51;Actif
+P024;Bureau Pro;Mobilier;Bureau;307.64;196.18;Actif
+P025;Support écran Standard;Mobilier;Support écran;284.76;199.32;Actif
+P026;Support écran Pro;Mobilier;Support écran;317.35;183.76;Actif
+P027;Caisson Standard;Mobilier;Caisson;197.75;113.33;Actif
+P028;Caisson Pro;Mobilier;Caisson;153.85;116.83;Inactif
+P029;Lampe Standard;Mobilier;Lampe;162.25;121.74;Actif
+P030;Lampe Pro;Mobilier;Lampe;149.14;108.84;Actif
+P031;Routeur Standard;Réseau;Routeur;182.57;117.1;Actif
+P032;Routeur Pro;Réseau;Routeur;142.35;100.37;Actif
+P033;Switch Standard;Réseau;Switch;227.74;158.09;Actif
+P034;Switch Pro;Réseau;Switch;164.1;110.67;Actif
+P035;Point d'accès Standard;Réseau;Point d'accès;129.55;91.65;Actif
+P036;Point d'accès Pro;Réseau;Point d'accès;128.55;73.37;Actif
+P037;Pare-feu Standard;Réseau;Pare-feu;201.29;143.3;Actif
+P038;Pare-feu Pro;Réseau;Pare-feu;120.21;74.4;Inactif
+P039;Adaptateur Standard;Réseau;Adaptateur;141.78;79.81;Actif
+P040;Adaptateur Pro;Réseau;Adaptateur;156.29;94.74;Actif

@@ -1,0 +1,151 @@
+﻿Client_ID;Nom_Client;Segment;Ville;Region;Pays;Date_Creation;Statut
+C0001;Client 001 - Distribution;ETI;Boulogne-Billancourt;Île-de-France;France;2022-04-03;Actif
+C0002;Client 002 - Solutions;PME;Créteil;Île-de-France;France;2021-03-07;Inactif
+C0003;Client 003 - Services;PME;Lille;Nord;France;2024-02-24;Actif
+C0004;Client 004 - Industrie;PME;Avignon;Sud;France;2022-07-24;Actif
+C0005;Client 005 - Services;ETI;Saint-Denis;Île-de-France;France;2022-07-24;Actif
+C0006;Client 006 - Distribution;PME;Strasbourg;Est;France;2023-01-06;Actif
+C0007;Client 007 - Retail;ETI;Toulon;Sud;France;2024-01-04;Actif
+C0008;Client 008 - Distribution;ETI;Le Mans;Ouest;France;2023-01-11;Actif
+C0009;Client 009 - Distribution;ETI;Saint-Denis;Île-de-France;France;2021-06-13;Actif
+C0010;Client 010 - Industrie;PME;Saint-Denis;Île-de-France;France;2021-11-30;Actif
+C0011;Client 011 - Retail;ETI;Lille;Nord;France;2024-06-01;Actif
+C0012;Client 012 - Services;PME;Toulon;Sud;France;2022-07-07;Actif
+C0013;Client 013 - Services;ETI;Marseille;Sud;France;2022-04-15;Actif
+C0014;Client 014 - Industrie;PME;Metz;Est;France;2024-03-07;Actif
+C0015;Client 015 - Services;ETI;Colmar;Est;France;2024-08-09;Actif
+C0016;Client 016 - Services;PME;Mulhouse;Est;France;2024-01-09;Actif
+C0017;Client 017 - Industrie;Grand Compte;Toulon;Sud;France;2023-01-12;Actif
+C0018;Client 018 - Solutions;PME;Lille;Nord;France;2021-08-13;Actif
+C0019;Client 019 - Industrie;ETI;Arras;Nord;France;2023-02-21;Actif
+C0020;Client 020 - Solutions;PME;Le Mans;Ouest;France;2021-01-24;Actif
+C0021;Client 021 - Solutions;ETI;Saint-Denis;Île-de-France;France;2021-08-17;Actif
+C0022;Client 022 - Industrie;PME;Tourcoing;Nord;France;2023-10-23;Actif
+C0023;Client 023 - Distribution;Grand Compte;Montpellier;Sud;France;2024-08-01;Actif
+C0024;Client 024 - Services;PME;Roubaix;Nord;France;2024-01-10;Actif
+C0025;Client 025 - Distribution;ETI;Toulon;Sud;France;2021-02-09;Actif
+C0026;Client 026 - Retail;PME;Metz;Est;France;2024-03-07;Actif
+C0027;Client 027 - Industrie;ETI;Nanterre;Île-de-France;France;2025-04-18;Actif
+C0028;Client 028 - Solutions;PME;Le Mans;Ouest;France;2024-05-27;Actif
+C0029;Client 029 - Solutions;ETI;Roubaix;Nord;France;2024-12-31;Actif
+C0030;Client 030 - Industrie;Grand Compte;Colmar;Est;France;2021-09-05;Actif
+C0031;Client 031 - Retail;PME;Nanterre;Île-de-France;France;2022-04-17;Actif
+C0032;Client 032 - Distribution;ETI;Paris;Île-de-France;France;2022-04-14;Inactif
+C0033;Client 033 - Retail;PME;Boulogne-Billancourt;Île-de-France;France;2022-07-25;Actif
+C0034;Client 034 - Solutions;PME;Dunkerque;Nord;France;2024-03-26;Actif
+C0035;Client 035 - Industrie;PME;Nantes;Ouest;France;2024-09-11;Actif
+C0036;Client 036 - Industrie;PME;Nantes;Ouest;France;2024-10-11;Actif
+C0037;Client 037 - Distribution;PME;Saint-Denis;Île-de-France;France;2025-06-28;Actif
+C0038;Client 038 - Services;PME;Arras;Nord;France;2021-10-15;Actif
+C0039;Client 039 - Industrie;PME;Strasbourg;Est;France;2023-06-27;Actif
+C0040;Client 040 - Distribution;PME;Avignon;Sud;France;2021-01-31;Actif
+C0041;Client 041 - Services;PME;Arras;Nord;France;2022-03-14;Actif
+C0042;Client 042 - Services;PME;Créteil;Île-de-France;France;2022-06-28;Actif
+C0043;Client 043 - Retail;PME;Le Mans;Ouest;France;2024-09-17;Actif
+C0044;Client 044 - Services;PME;Lille;Nord;France;2024-04-01;Actif
+C0045;Client 045 - Retail;PME;Nanterre;Île-de-France;France;2023-09-04;Actif
+C0046;Client 046 - Services;PME;Avignon;Sud;France;2021-06-14;Actif
+C0047;Client 047 - Solutions;PME;Boulogne-Billancourt;Île-de-France;France;2023-04-07;Actif
+C0048;Client 048 - Services;ETI;Marseille;Sud;France;2024-06-22;Actif
+C0049;Client 049 - Solutions;PME;Montpellier;Sud;France;2022-02-23;Actif
+C0050;Client 050 - Services;PME;Metz;Est;France;2024-10-07;Actif
+C0051;Client 051 - Retail;Grand Compte;Nantes;Ouest;France;2021-01-20;Actif
+C0052;Client 052 - Distribution;PME;Nice;Sud;France;2023-11-03;Actif
+C0053;Client 053 - Distribution;Grand Compte;Nancy;Est;France;2022-08-07;Actif
+C0054;Client 054 - Retail;ETI;Avignon;Sud;France;2021-01-17;Actif
+C0055;Client 055 - Retail;Grand Compte;Marseille;Sud;France;2021-10-03;Actif
+C0056;Client 056 - Solutions;PME;Saint-Denis;Île-de-France;France;2024-05-23;Actif
+C0057;Client 057 - Services;ETI;Nancy;Est;France;2023-11-02;Actif
+C0058;Client 058 - Distribution;ETI;Saint-Denis;Île-de-France;France;2021-04-01;Inactif
+C0059;Client 059 - Retail;PME;Arras;Nord;France;2024-02-04;Actif
+C0060;Client 060 - Distribution;PME;Nice;Sud;France;2024-01-23;Inactif
+C0061;Client 061 - Solutions;ETI;Colmar;Est;France;2021-09-19;Inactif
+C0062;Client 062 - Distribution;Grand Compte;Metz;Est;France;2024-10-28;Actif
+C0063;Client 063 - Retail;ETI;Créteil;Île-de-France;France;2024-06-25;Actif
+C0064;Client 064 - Services;Grand Compte;Roubaix;Nord;France;2023-04-25;Inactif
+C0065;Client 065 - Industrie;ETI;Metz;Est;France;2022-07-01;Actif
+C0066;Client 066 - Industrie;Grand Compte;Créteil;Île-de-France;France;2022-04-01;Actif
+C0067;Client 067 - Retail;PME;Rennes;Ouest;France;2022-04-02;Inactif
+C0068;Client 068 - Industrie;PME;Lille;Nord;France;2025-05-03;Actif
+C0069;Client 069 - Industrie;ETI;Avignon;Sud;France;2022-11-10;Actif
+C0070;Client 070 - Retail;PME;Saint-Denis;Île-de-France;France;2021-03-20;Actif
+C0071;Client 071 - Retail;ETI;Angers;Ouest;France;2023-06-13;Actif
+C0072;Client 072 - Distribution;PME;Avignon;Sud;France;2022-01-25;Actif
+C0073;Client 073 - Distribution;PME;Le Mans;Ouest;France;2024-11-07;Actif
+C0074;Client 074 - Retail;PME;Tourcoing;Nord;France;2024-06-30;Actif
+C0075;Client 075 - Retail;PME;Créteil;Île-de-France;France;2022-10-31;Actif
+C0076;Client 076 - Solutions;PME;Colmar;Est;France;2024-09-23;Actif
+C0077;Client 077 - Solutions;ETI;Arras;Nord;France;2024-01-28;Actif
+C0078;Client 078 - Retail;PME;Mulhouse;Est;France;2024-05-27;Actif
+C0079;Client 079 - Industrie;PME;Rennes;Ouest;France;2023-11-13;Actif
+C0080;Client 080 - Distribution;PME;Dunkerque;Nord;France;2022-11-18;Actif
+C0081;Client 081 - Retail;PME;Roubaix;Nord;France;2021-10-29;Inactif
+C0082;Client 082 - Industrie;ETI;Lille;Nord;France;2023-07-22;Actif
+C0083;Client 083 - Services;ETI;Toulon;Sud;France;2023-10-10;Actif
+C0084;Client 084 - Distribution;Grand Compte;Lille;Nord;France;2025-05-14;Actif
+C0085;Client 085 - Solutions;PME;Dunkerque;Nord;France;2022-05-26;Actif
+C0086;Client 086 - Industrie;PME;Créteil;Île-de-France;France;2024-09-29;Actif
+C0087;Client 087 - Solutions;PME;Toulon;Sud;France;2024-06-08;Actif
+C0088;Client 088 - Industrie;ETI;Avignon;Sud;France;2023-07-03;Actif
+C0089;Client 089 - Industrie;PME;Rennes;Ouest;France;2024-07-29;Actif
+C0090;Client 090 - Industrie;ETI;Montpellier;Sud;France;2023-06-20;Inactif
+C0091;Client 091 - Services;PME;Nancy;Est;France;2024-01-12;Actif
+C0092;Client 092 - Services;PME;Roubaix;Nord;France;2024-12-17;Actif
+C0093;Client 093 - Industrie;PME;Brest;Ouest;France;2023-05-02;Inactif
+C0094;Client 094 - Industrie;Grand Compte;Le Mans;Ouest;France;2024-11-25;Inactif
+C0095;Client 095 - Industrie;PME;Montpellier;Sud;France;2022-09-04;Actif
+C0096;Client 096 - Solutions;ETI;Le Mans;Ouest;France;2025-06-27;Actif
+C0097;Client 097 - Industrie;PME;Arras;Nord;France;2023-09-22;Inactif
+C0098;Client 098 - Industrie;ETI;Colmar;Est;France;2021-09-19;Actif
+C0099;Client 099 - Distribution;Grand Compte;Avignon;Sud;France;2024-03-01;Actif
+C0100;Client 100 - Industrie;PME;Créteil;Île-de-France;France;2022-01-08;Inactif
+C0101;Client 101 - Retail;PME;Angers;Ouest;France;2022-11-23;Actif
+C0102;Client 102 - Retail;ETI;Brest;Ouest;France;2022-06-01;Actif
+C0103;Client 103 - Distribution;ETI;Nantes;Ouest;France;2022-12-18;Actif
+C0104;Client 104 - Distribution;ETI;Boulogne-Billancourt;Île-de-France;France;2022-02-13;Actif
+C0105;Client 105 - Services;PME;Toulon;Sud;France;2024-10-03;Actif
+C0106;Client 106 - Industrie;ETI;Tourcoing;Nord;France;2021-12-10;Actif
+C0107;Client 107 - Services;Grand Compte;Paris;Île-de-France;France;2024-03-31;Inactif
+C0108;Client 108 - Solutions;ETI;Colmar;Est;France;2023-03-24;Actif
+C0109;Client 109 - Distribution;ETI;Roubaix;Nord;France;2021-07-28;Actif
+C0110;Client 110 - Solutions;ETI;Mulhouse;Est;France;2025-05-22;Inactif
+C0111;Client 111 - Industrie;ETI;Marseille;Sud;France;2023-11-03;Actif
+C0112;Client 112 - Industrie;ETI;Paris;Île-de-France;France;2023-06-07;Actif
+C0113;Client 113 - Services;PME;Le Mans;Ouest;France;2024-08-25;Actif
+C0114;Client 114 - Industrie;PME;Avignon;Sud;France;2022-07-04;Actif
+C0115;Client 115 - Distribution;PME;Arras;Nord;France;2022-05-15;Actif
+C0116;Client 116 - Solutions;ETI;Montpellier;Sud;France;2021-02-28;Actif
+C0117;Client 117 - Services;PME;Nancy;Est;France;2025-06-22;Actif
+C0118;Client 118 - Solutions;ETI;Nancy;Est;France;2024-02-13;Inactif
+C0119;Client 119 - Distribution;PME;Arras;Nord;France;2023-09-28;Actif
+C0120;Client 120 - Industrie;ETI;Arras;Nord;France;2023-07-07;Actif
+C0121;Client 121 - Retail;PME;Boulogne-Billancourt;Île-de-France;France;2022-09-20;Actif
+C0122;Client 122 - Industrie;ETI;Nancy;Est;France;2023-05-22;Actif
+C0123;Client 123 - Retail;PME;Toulon;Sud;France;2022-07-09;Actif
+C0124;Client 124 - Distribution;ETI;Tourcoing;Nord;France;2021-09-02;Actif
+C0125;Client 125 - Services;PME;Arras;Nord;France;2022-07-21;Actif
+C0126;Client 126 - Solutions;PME;Marseille;Sud;France;2022-02-02;Actif
+C0127;Client 127 - Services;PME;Mulhouse;Est;France;2021-09-17;Actif
+C0128;Client 128 - Solutions;PME;Boulogne-Billancourt;Île-de-France;France;2024-07-30;Actif
+C0129;Client 129 - Distribution;Grand Compte;Le Mans;Ouest;France;2022-08-06;Actif
+C0130;Client 130 - Retail;PME;Nantes;Ouest;France;2022-06-02;Actif
+C0131;Client 131 - Distribution;ETI;Brest;Ouest;France;2023-10-05;Inactif
+C0132;Client 132 - Services;PME;Nanterre;Île-de-France;France;2022-09-15;Actif
+C0133;Client 133 - Distribution;ETI;Arras;Nord;France;2024-05-26;Actif
+C0134;Client 134 - Services;ETI;Toulon;Sud;France;2023-07-12;Actif
+C0135;Client 135 - Solutions;Grand Compte;Nancy;Est;France;2024-03-10;Actif
+C0136;Client 136 - Distribution;Grand Compte;Nice;Sud;France;2024-07-05;Actif
+C0137;Client 137 - Services;PME;Nanterre;Île-de-France;France;2021-06-03;Actif
+C0138;Client 138 - Industrie;ETI;Brest;Ouest;France;2022-08-20;Inactif
+C0139;Client 139 - Retail;ETI;Colmar;Est;France;2021-05-26;Actif
+C0140;Client 140 - Solutions;ETI;Metz;Est;France;2023-05-21;Actif
+C0141;Client 141 - Services;Grand Compte;Roubaix;Nord;France;2021-05-27;Inactif
+C0142;Client 142 - Solutions;ETI;Mulhouse;Est;France;2022-08-15;Actif
+C0143;Client 143 - Retail;ETI;Angers;Ouest;France;2023-10-22;Actif
+C0144;Client 144 - Distribution;ETI;Brest;Ouest;France;2025-02-13;Actif
+C0145;Client 145 - Distribution;PME;Mulhouse;Est;France;2024-04-17;Actif
+C0146;Client 146 - Solutions;PME;Metz;Est;France;2023-08-22;Actif
+C0147;Client 147 - Retail;PME;Le Mans;Ouest;France;2023-06-12;Actif
+C0148;Client 148 - Distribution;PME;Brest;Ouest;France;2022-11-14;Actif
+C0149;Client 149 - Services;PME;Créteil;Île-de-France;France;2022-08-14;Actif
+C0150;Client 150 - Solutions;PME;Nantes;Ouest;France;2022-10-07;Actif
